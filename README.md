@@ -1,2 +1,2 @@
 # GZ1
-Trial repository
+Mini-Projects
