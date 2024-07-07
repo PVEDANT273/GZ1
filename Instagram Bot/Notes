@@ -1,0 +1,13 @@
+XPATH and the selectors change every time you access the page! That's because they are dynamically generated on
+Instagram's side, so each time you visit the page, the elements will be different.
+
+You'll need to use contains() and text() in your XPATH. For example, to find a button that has the words "Click me" on
+a page, you can use:
+
+   button = driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Click me')]")
+
+The WebDriverWait class is used to wait until the element is present on the page.
+this is how you import the class
+
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
